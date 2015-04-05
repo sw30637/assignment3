@@ -1,0 +1,62 @@
+IPython
+
+1. Locate the file that the os.path.abspath function is defined in. Hint: Look for
+some way to find out more information about a Python object, and find one that tells
+you about the file that the function is defined in. What is the command you used and
+the path of the file? 
+
+I used the '??' command to find the path of the file which is /usr/lib/python2.7/posixpath.py
+
+2. Use a single shell command to count the number of files in the /etc directory. Once
+you have the shell command, look at the IPython documentation for a way to run a
+shell command and assign the result to a variable called “num”. What is the
+command you used to assign the value to num?iable called “num”. What is the
+command you used to assign the value to num?
+
+The shell command is ls | wc -l
+The command used to assign the value to num is num = !ls -l | wc -l
+
+3. Print the square root of num. What command did you use, and what is the value?
+
+import math
+value = math.sqrt(num)
+print value
+
+
+4. Set a variable x = 12345. Calculate the square of x using the following methods:
+x**2, x*x, or numpy.square(x). Which is the fastest method? Hint: the
+%timeit line magic will show how long it takes to execute a statement. Also, you
+must import the numpy library before trying to use any numpy functions. 
+
+The fastest method is x*x
+
+5. How many cell magic commands are there? 
+
+There are 24 cell magic commands
+
+PyDev
+
+1. Using PyDev, create a new project using your Net ID as the project name.
+
+
+2. Create a package called my_package in the project, then create an empty module
+called hello_world in the package.
+
+
+3. Replace the contents of the module with the hello_world.py file in your home
+directory (if you are not using VirtualBox, contact me and I will send you a copy of
+this file). Save the file.
+
+
+4. Using the “Extract Method...” refactoring, extract the ‘print “Hello
+World!”’ statement as a function called “hello_world” located at the start of
+the module. 
+
+
+5. Create a run configuration and launch the program. What is the contents of the
+Console
+
+The console says: 
+
+Hello World!
+
